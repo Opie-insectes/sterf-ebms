@@ -1232,7 +1232,7 @@ SELECT
     -- Sur l'eBMS une visite est faite sur une seule journée et pas plusieurs.
     guid AS "external_key",
     -- Location external key : UUID du transect.
-    "location external key",
+    location_external_key AS "location external key",
     -- Location name : nom du transect.
     "location_name",
     -- Centroid SREF : centroïde du transect (repris de la vue transect).
