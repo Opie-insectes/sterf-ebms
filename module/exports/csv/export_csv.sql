@@ -1339,7 +1339,7 @@ FROM (
     WHERE tm.module_code = 'sterf_ebms'
     ORDER BY tbv.meta_create_date
 ) visits
-GROUP BY guid, location_name, location_external_key, grid_ref, grid_ref_srid, "date"
+GROUP BY "guid", "location_name", "location external key", "grid ref", "grid ref srid", "date"
 ;
 
 --------------------------------------------------------------------------------
