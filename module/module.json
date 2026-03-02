@@ -4,19 +4,24 @@
   "module_desc": "Suivi temporel des rhopalocères français (eBMS)",
   "export_csv": [
     {
-      "label": "Transects et sections",
+      "label": "Transects (export pour eBMS)",
       "type": "csv",
       "method": "transects"
     },
     {
-      "label": "Visites",
+      "label": "Sections (export pour eBMS)",
       "type": "csv",
-      "method": "visits"
+      "method": "sections"
     },
     {
-      "label": "Observations",
+      "label": "Visites de transects (export pour eBMS)",
       "type": "csv",
-      "method": "observations"
+      "method": "transect_visits"
+    },
+    {
+      "label": "Observations (export pour eBMS)",
+      "type": "csv",
+      "method": "section_observations"
     }
   ]
 }

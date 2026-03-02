@@ -4,7 +4,7 @@
   "label_list": "Transects eBMS",
   "geom_field_name": "geom",
   "geometry_type": "Point",
-  "b_draw_sites_group": true,
+  "b_draw_sites_group": false,
   "display_properties": [
     "uuid_sites_group",
     "sites_group_name",
@@ -38,7 +38,8 @@
   "specific": {
     "sites_group_code": {
       "attribut_label": "Code",
-      "definition": "Code EBMS au format \"EBMS:France:XXX\" si le transect existe sur la plateforme eBMS ; laissez vide sinon."
+      "definition": "Code EBMS au format \"EBMS:France:XXX\" si le transect existe sur la plateforme eBMS ; laissez vide sinon.",
+      "required": false
     },
     "uuid_sites_group": {
       "attribut_label": "UUID"

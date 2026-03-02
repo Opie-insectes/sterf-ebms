@@ -27,6 +27,10 @@
     "completed"
   ],
   "specific": {
+    "visit_date_max": {
+      "required": false,
+      "hidden": true
+    },
     "start_hour": {
       "type_widget": "time",
       "attribut_label": "Heure de début",
@@ -72,6 +76,7 @@
     "reliability": {
       "type_widget": "radio",
       "attribut_label": "Fiabilité",
+      "definition": "Est-ce que les conditions permettent un décompte fidèle (A) ou non (B), voire ne permettent pas de décompte du tout (C) ?",
       "values": ["A. Conditions appropriées", "B. Conditions inappropriées", "C. Relevé impossible"],
       "value": "A. Conditions appropriées"
     }

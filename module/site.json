@@ -23,8 +23,6 @@
     "habitat_secondary_2",
     "habitat_secondary_3",
     "habitat_secondary_4",
-    "land_tenure",
-    "land_tenure_2",
     "land_management",
     "land_management_2",
     "comments"
@@ -40,7 +38,7 @@
       "attribut_label": "UUID"
     },
     "base_site_code": {
-      "definition": "Pour assurer la cohérence avec vos sections EBMS, utilisez le format de numérotation suivant : S1, S2, S3, etc."
+      "definition": "Pour assurer la cohérence avec l'eBMS, utilisez le format de numérotation suivant : S1, S2, S3, etc."
     },
     "id_digitiser": {
       "attribut_label": "Créateur·ice"
@@ -280,23 +278,9 @@
       "hidden": true,
       "type_util": "nomenclature"
     },
-    "land_tenure": {
-      "type_widget": "nomenclature",
-      "attribut_label": "Gestionnaire du terrain",
-      "code_nomenclature_type": "EBMS_LAND_TENURE",
-      "required": false,
-      "type_util": "nomenclature"
-    },
-    "land_tenure_2": {
-      "type_widget": "nomenclature",
-      "attribut_label": "Gestionnaire du terrain (secondaire, optionnel)",
-      "code_nomenclature_type": "EBMS_LAND_TENURE",
-      "required": false,
-      "type_util": "nomenclature"
-    },
     "land_management": {
       "type_widget": "nomenclature",
-      "attribut_label": "Gestion du terrain",
+      "attribut_label": "Gestion du terrain (optionnel)",
       "code_nomenclature_type": "EBMS_LAND_MANAGEMENT",
       "required": false,
       "type_util": "nomenclature"

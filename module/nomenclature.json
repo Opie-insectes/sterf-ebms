@@ -743,6 +743,7 @@
       "cd_nomenclature": "B00",
       "mnemonique": "0",
       "label_default": "00. Calme",
+      "label_en": "0. Smoke rises vertically",
       "definition_default": "La fumée monte verticalement. Les feuilles des arbres ne témoignent d'aucun mouvement."
     },
     {
@@ -750,6 +751,7 @@
       "cd_nomenclature": "B01",
       "mnemonique": "1",
       "label_default": "01. Très légère brise",
+      "label_en": "1. Slight smoke drift",
       "definition_default": "La fumée indique la direction du vent. Les girouettes ne s'orientent pas."
     },
     {
@@ -757,6 +759,7 @@
       "cd_nomenclature": "B02",
       "mnemonique": "2",
       "label_default": "02. Légère brise",
+      "label_en": "2. Wind felt on face, leaves rustle",
       "definition_default": "On sent le vent sur le visage. Les feuilles s'agitent. Les girouettes s'orientent."
     },
     {
@@ -764,6 +767,7 @@
       "cd_nomenclature": "B03",
       "mnemonique": "3",
       "label_default": "03. Petite brise",
+      "label_en": "3. Leaves and twigs in slight motion",
       "definition_default": "Les drapeaux flottent au vent. Les feuilles sont sans cesse en mouvement."
     },
     {
@@ -771,6 +775,7 @@
       "cd_nomenclature": "B04",
       "mnemonique": "4",
       "label_default": "04. Jolie brise",
+      "label_en": "4. Dust raised and small branches move",
       "definition_default": "Les poussières s'envolent. Les petites branches plient."
     },
     {
@@ -778,6 +783,7 @@
       "cd_nomenclature": "B05",
       "mnemonique": "5",
       "label_default": "05. Bonne brise",
+      "label_en": "5. Small trees in leaf begin to sway",
       "definition_default": "Le tronc des arbustes et arbrisseaux en feuilles balance. La cime de tous les arbres est agitée. Des vaguelettes se forment sur les eaux intérieures."
     },
     {
@@ -785,6 +791,7 @@
       "cd_nomenclature": "B06",
       "mnemonique": "6",
       "label_default": "06. Vent frais",
+      "label_en": "6. Large branches move and trees sway",
       "definition_default": "On entend siffler le vent. Les branches de large diamètre s'agitent. Les parapluies sont susceptibles de se retourner."
     },
     {
@@ -834,6 +841,7 @@
       "cd_nomenclature": "LT_FARMING",
       "mnemonique": "Farming",
       "label_default": "Agriculture",
+      "label_en": "Farming",
       "definition_default": null
     },
     {
@@ -841,6 +849,7 @@
       "cd_nomenclature": "LT_FORESTRY",
       "mnemonique": "Forestry",
       "label_default": "Sylviculture",
+      "label_en": "Forestry",
       "definition_default": null
     },
     {
@@ -848,6 +857,7 @@
       "cd_nomenclature": "LT_MILITARY",
       "mnemonique": "Military",
       "label_default": "Terrain militaire",
+      "label_en": "Military",
       "definition_default": null
     },
     {
@@ -855,6 +865,7 @@
       "cd_nomenclature": "LT_NATURE_CONSERVATION",
       "mnemonique": "NatureConservation",
       "label_default": "Espace naturel conservé",
+      "label_en": "Nature Conservation",
       "definition_default": null
     },
     {
@@ -862,6 +873,7 @@
       "cd_nomenclature": "LT_PRIVATE_COMPANY",
       "mnemonique": "PrivateCompany",
       "label_default": "Entreprise privée",
+      "label_en": "Private Company",
       "definition_default": null
     },
     {
@@ -869,6 +881,7 @@
       "cd_nomenclature": "LT_PRIVATE_PERSON",
       "mnemonique": "PrivatePerson",
       "label_default": "Particulier",
+      "label_en": "Private Person",
       "definition_default": null
     },
     {
@@ -876,6 +889,7 @@
       "cd_nomenclature": "LT_PUBLIC",
       "mnemonique": "Public",
       "label_default": "Lieu public",
+      "label_en": "Public",
       "definition_default": null
     },
     {
@@ -883,6 +897,7 @@
       "cd_nomenclature": "LT_UNKNOWN",
       "mnemonique": "Unknown",
       "label_default": "Inconnu",
+      "label_en": "Unknown",
       "definition_default": null
     },
     {
@@ -890,6 +905,7 @@
       "cd_nomenclature": "LM_BURNING",
       "mnemonique": "Burning",
       "label_default": "Brûlis",
+      "label_en": "Burning",
       "definition_default": null
     },
     {
@@ -897,6 +913,7 @@
       "cd_nomenclature": "LM_COPPICING",
       "mnemonique": "Coppicing",
       "label_default": "Taillis",
+      "label_en": "Coppicing",
       "definition_default": null
     },
     {
@@ -904,6 +921,7 @@
       "cd_nomenclature": "LM_EXTRACTION",
       "mnemonique": "Extraction",
       "label_default": "Extraction",
+      "label_en": "Extraction (e.g. sod/peat cutting, aggregate extraction, topsoil stripping etc.)",
       "definition_default": "Par exemple : coupe de gazon/tourbe, extraction d'agrégats, décapage de la couche arable, etc."
     },
     {
@@ -911,6 +929,7 @@
       "cd_nomenclature": "LM_FARMING",
       "mnemonique": "Farming",
       "label_default": "Agriculture",
+      "label_en": "Farming",
       "definition_default": null
     },
     {
@@ -918,6 +937,7 @@
       "cd_nomenclature": "LM_FORESTRY",
       "mnemonique": "Forestry",
       "label_default": "Sylviculture",
+      "label_en": "Forestry",
       "definition_default": null
     },
     {
@@ -925,6 +945,7 @@
       "cd_nomenclature": "LM_GRAZING",
       "mnemonique": "Grazing",
       "label_default": "Pâturage",
+      "label_en": "Grazing",
       "definition_default": null
     },
     {
@@ -932,6 +953,7 @@
       "cd_nomenclature": "LM_HERBICIDE_SPRAYING",
       "mnemonique": "HerbicideSpraying",
       "label_default": "Pulvérisation d'herbicide",
+      "label_en": "Herbicide spraying",
       "definition_default": null
     },
     {
@@ -939,6 +961,7 @@
       "cd_nomenclature": "LM_LAND_DRAINAGE",
       "mnemonique": "LandDrainage",
       "label_default": "Drainage",
+      "label_en": "Land drainage",
       "definition_default": null
     },
     {
@@ -946,6 +969,7 @@
       "cd_nomenclature": "LM_MOWING",
       "mnemonique": "Mowing",
       "label_default": "Fauchage",
+      "label_en": "Mowing",
       "definition_default": null
     },
     {
@@ -953,6 +977,7 @@
       "cd_nomenclature": "LM_NONE",
       "mnemonique": "None",
       "label_default": "Pas de gestion",
+      "label_en": "No-management",
       "definition_default": null
     },
     {
@@ -960,6 +985,7 @@
       "cd_nomenclature": "LM_OTHER",
       "mnemonique": "Other",
       "label_default": "Autre",
+      "label_en": "Other",
       "definition_default": null
     },
     {
@@ -967,6 +993,7 @@
       "cd_nomenclature": "LM_PEST_MANAGEMENT",
       "mnemonique": "PestManagement",
       "label_default": "Lutte contre les ravageurs",
+      "label_en": "Pest management (e.g. insecticide spraying)",
       "definition_default": "Par exemple : pulvérisation d'insecticides."
     },
     {
@@ -974,6 +1001,7 @@
       "cd_nomenclature": "LM_TURF_CUTTING",
       "mnemonique": "TurfCutting",
       "label_default": "Tonte de gazon",
+      "label_en": "Turf cutting",
       "definition_default": null
     },
     {
@@ -981,6 +1009,7 @@
       "cd_nomenclature": "LH_DITCH",
       "mnemonique": "Ditch",
       "label_default": "Fossé",
+      "label_en": "Ditch",
       "definition_default": null
     },
     {
@@ -988,6 +1017,7 @@
       "cd_nomenclature": "LH_FIELD_MARGIN",
       "mnemonique": "FieldMargin",
       "label_default": "Bordure de champ",
+      "label_en": "Field margin",
       "definition_default": null
     },
     {
@@ -995,6 +1025,7 @@
       "cd_nomenclature": "LH_FOREST_EDGE",
       "mnemonique": "ForestEdge",
       "label_default": "Lisière forestière",
+      "label_en": "Forest edge",
       "definition_default": null
     },
     {
@@ -1002,6 +1033,7 @@
       "cd_nomenclature": "LH_HEDGE",
       "mnemonique": "Hedge",
       "label_default": "Haie",
+      "label_en": "Hedge",
       "definition_default": null
     },
     {
@@ -1009,6 +1041,7 @@
       "cd_nomenclature": "LH_NOT_ASSIGNED",
       "mnemonique": "NotAssigned",
       "label_default": "Non assigné",
+      "label_en": "Not assigned",
       "definition_default": null
     },
     {
@@ -1016,6 +1049,7 @@
       "cd_nomenclature": "LH_NOT_LH",
       "mnemonique": "NotLinearHabitat",
       "label_default": "Non linéaire",
+      "label_en": "Not linear habitat",
       "definition_default": null
     },
     {
@@ -1023,6 +1057,7 @@
       "cd_nomenclature": "LH_RIVER_LIKE",
       "mnemonique": "RiverOrPondBank",
       "label_default": "Rive d'une rivière ou d'un étang",
+      "label_en": "River/pond bank",
       "definition_default": null
     },
     {
@@ -1030,6 +1065,7 @@
       "cd_nomenclature": "LH_ROAD",
       "mnemonique": "Road",
       "label_default": "Route ou chemin",
+      "label_en": "Road/path",
       "definition_default": null
     },
     {
