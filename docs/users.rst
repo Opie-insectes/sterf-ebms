@@ -4,6 +4,9 @@ Documentation utilisateur·ice
 Cette documentation présente les fonctionnalités du module disponibles lors de
 la saisie des données.
 
+
+.. _terminologie:
+
 Terminologie
 ------------
 
@@ -27,6 +30,9 @@ confusion et faciliter la transition, les transects et sections sont
 explicitement nommés « transects eBMS » et « section eBMS » dans le module. Dans
 cette documentation, nous utiliserons toujours les termes de l'eBMS.
 
+
+.. _geonature_characteristics:
+
 Spécificités de GeoNature
 -------------------------
 
@@ -34,10 +40,11 @@ Le module GeoNature apporte son lot de spécificités sur la façon de noter ses
 données Sterf.
 
 Il est courant de noter ses visites de transects en enregistrant la température,
-le vent, toutes les données de la visite au début, puis de parcourir les
-différentes sections pour faire ses observations. Dans GeoNature, chaque section
-fait l'objet d'une visite distincte. Cela permet d'être plus fin dans la
-documentation.
+le vent, bref toutes les données utiles de la visite à son début, puis de
+parcourir les différentes sections pour faire ses observations. Dans GeoNature,
+chaque section fait l'objet d'une visite *distincte*. Cela permet d'être plus
+fin dans la saisie des informations sur ses sections, au prix parfois d'une
+certaine redondance dans les informations saisies.
 
 .. admonition:: Pourquoi cette différence
 
@@ -49,6 +56,8 @@ documentation.
    d'avoir à définir les informations d'une visite au niveau de chaque section
    plutôt qu'au niveau plus général du transect.
 
+
+.. _enter_my_data:
 
 Saisir ses données
 ------------------

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Module GN Sterf-eBMS documentation
-==================================
+Module GeoNature Sterf-eBMS
+===========================
 
 .. toctree::
    :maxdepth: 2
@@ -24,8 +24,19 @@ d'exporter ses données à destination de la plateforme européenne, `eBMS`_.
 .. _module de suivi: https://github.com/PnX-SI/gn_module_monitoring
 .. _eBMS: https://butterfly-monitoring.net/
 
-Ses objectifs sont de fournir une configuration adéquate pour la saisie de
-données à laquelle que les habitués du Sterf
+.. image::
+   https://docs.insectes.org/media/sterf-ebms/img.jpg
+   :height: 10rem
+   :width: 10rem
+   :alt: Logo de l'eBMS
+   :align: center
+
+Ses objectifs sont :
+
+1. Fournir une configuration adéquate pour la saisie de données à laquelle les
+   participants au Sterf sont habitué·e·s ;
+2. Fournir la capacité d'exporter ses données Sterf de façon standardisée et en
+   autonomie vers l'eBMS.
 
 Cette documentation se présente en trois parties : une première à destination
 des utilisateurs du module, une deuxième à destination des administrateurs
@@ -49,18 +60,30 @@ données de la plateforme eBMS.
 FAQ
 ---
 
-*Pourquoi un nouveau module Sterf alors que plusieurs régions ont déjà conçues
-leurs propres configurations pour saisir des données Sterf sur GeoNature ?*
+.. admonition:: Pourquoi un nouveau module Sterf alors que plusieurs régions ont
+   déjà conçu leurs propres configurations pour saisir des données Sterf sur
+   GeoNature ?
 
-L'objectif de ce module est de garantir que les données saisies soient
-suffisamment exhaustives pour pouvoir être exportées et envoyer aux
-administrateurs de la plateforme eBMS, de façon à intégrer les données Sterf
-dans la base de données européenne.
+   L'objectif de ce module est de garantir que les données saisies soient
+   suffisamment exhaustives pour pouvoir être exportées et envoyer aux
+   administrateurs de la plateforme eBMS, de façon à intégrer les données Sterf
+   dans la base de données européenne.
 
-*Est-ce que je peux installer ce module sur mon instance GeoNature ?*
+.. admonition:: Est-ce que je peux installer ce module sur mon instance
+   GeoNature ?
 
-Oui ! La documentation d'administration est là pour ça, et vous pouvez `nous
-contacter <admin@insectes.org>`__ en cas de problème.
+   Oui, la documentation d'administration est là pour ça, et vous pouvez `nous
+   contacter <admin@insectes.org>`__ en cas de problème.
+
+.. admonition:: J'ai déjà un module Sterf, est-ce que je peux installer ce
+   module en parallèle, voire migrer mes données ?
+
+   Oui, vous pouvez ajouter ce module en plus de vos modules existants. Il est
+   toujours possible de migrer les données d'un module à un autre, soit
+   manuellement soit à l'aide de requêtes SQL ; dans tous les cas c'est un
+   processus qui varie selon chaque module, mais vous trouverez dans la
+   documentation d'administration des conseils ainsi qu'un exemple de migration
+   pour vous aider à migrer vos données.
 
 
 À propos
@@ -73,3 +96,23 @@ français de la biodiversité`_.
 .. _Office pour les insectes et leur environnement: https://insectes.org
 .. _UKCEH: https://www.ceh.ac.uk/
 .. _Office français de la biodiversité: https://ofb.gouv.fr/
+
+Contributeur·ice·s :
+
+* Adrien Abraham (développement)
+* Alexia Monsavoir (gestion de données)
+* Mathieu de Flores (coordination Opie)
+* Reto Schmucki (coordination UKCEH)
+* Jim Bacon (accompagnement technique UKCEH)
+
+Nous tenons à remercier le `CEN Normandie`_, `Nature en Occitanie`_ et le `CEN
+Bourgogne`_ pour nous avoir transmis leurs propres modules Sterf durant la phase
+d'étude de ce projet, ainsi que les développeurs de GeoNature et du module
+Monitorings pour leur accompagnement.
+
+.. _CEN Normandie: https://www.cen-normandie.fr/
+.. _Nature en Occitanie: https://www.natureo.org/
+.. _CEN Bourgogne: https://www.cen-bourgogne.fr/
+
+Cette documentation a été rédigée sans avoir recours à l'intelligence
+artificielle.

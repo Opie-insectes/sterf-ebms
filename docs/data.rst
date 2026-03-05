@@ -1,7 +1,7 @@
 Data documentation
 ==================
 
-This page is mainly destined to the folks who will integrate exports produced by
+This page is mainly destined to he folks who will integrate exports produced by
 this module. As this target audience is mostly english-speaking, this section is
 in English.
 
@@ -38,11 +38,10 @@ The expected flow for Sterf-eBMS data is the following:
 
 .. _MNHN: https://www.mnhn.fr/en
 
-The default eBMS contact you can use is the general `eBMS address`_. If you
-would like feedback on your data before sending it to the eBMS because you are
-unsure of something, `write to us instead <sig@insectes.org>`__.
+.. admonition:: I have exported data from this module, who do I send it to?
 
-.. _eBMS address: ebms@ceh.ac.uk
+   Sending your data to the eBMS is covered in the :ref:`admin documentation
+   <send_my_data>`.
 
 When observations are produced, GeoNature immediately attaches an UUID to each
 one. This UUID is shared in all steps of this flow, thus preventing data
