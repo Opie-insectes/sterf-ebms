@@ -16,8 +16,8 @@ Le module a été développé avec GeoNature en version 2.15 et le module
 
 .. _Monitoring: https://github.com/PnX-SI/gn_module_monitoring
 
-La dernière version du module est toujours disponible sur son `propre dépôt`_. Une
-version récente est également mise à disposition sur le `dépôt commun`_ aux
+La dernière version du module est toujours disponible sur son `propre dépôt`_.
+Une version récente est également mise à disposition sur le `dépôt commun`_ aux
 configurations des suivis mais peut ne pas être la version la plus à jour
 disponible.
 
@@ -258,6 +258,9 @@ Vous pouvez envoyer vos données par e-mail à `l'adresse de l'eBMS`_. **Nous vo
 prions de bien vouloir nous mettre en copie** via notre `adresse de gestion de
 données`_, de façon à pouvoir suivre l'utilisation du module et le bon
 déroulement des échanges de données dans le cadre de l'animation du programme.
+Nous vous recommandons dans votre e-mail de préciser que ces données ont été
+produites à l'aide de ce module, si possible avec le numéro de version du
+module, et d'ajouter un lien vers la :doc:`documentation des données <data>`.
 
 Si vous avez des questions sur vos exports ou que vous souhaitez un retour sur
 vos données avant l'envoi à l'eBMS, n'hésitez pas à nous écrire directement.
@@ -265,5 +268,5 @@ vos données avant l'envoi à l'eBMS, n'hésitez pas à nous écrire directement
 .. _l'adresse de l'eBMS: ebms@ceh.ac.uk
 .. _adresse de gestion de données: sig@insectes.org
 
-Vous pouvez également consulter la :doc:`documentation sur les données <data>`
+Vous pouvez également consulter la :doc:`documentation des données <data>`
 pour en savoir plus sur le format des exports.

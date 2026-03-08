@@ -1,18 +1,17 @@
 Data documentation
 ==================
 
-This page is mainly destined to he folks who will integrate exports produced by
+This page is mainly destined to the folks who will integrate exports produced by
 this module. As this target audience is mostly english-speaking, this section is
 in English.
 
-This documentation often refers to `Indicia`_, which is the backend used by the
-eBMS platform to store data. Some technical choices taken with this module
-cannot be explained without having this information, as some redundant or
-weirdly formatted data is exported in a specific way so that importing
-them into Indicia becomes a process involving as few manual process as possible.
-We took the greatest care while working with the UKCEH to understand the way
-Indicia stores data to ensure concepts stay meaningful when exported data ends
-up in the eBMS.
+We often refer to `Indicia`_, which is the backend used by the eBMS platform to
+store data. Some technical choices taken with this module cannot be explained
+without having this information, as some redundant or weirdly formatted data is
+exported in a specific way so that importing them into Indicia becomes a process
+involving as few manual process as possible. We took the greatest care while
+working with the UKCEH to understand the way Indicia stores data to ensure
+concepts stay meaningful when exported data ends up in the eBMS.
 
 The `Indicia import process`_ is documented on the Indicia documentation.
 
@@ -89,19 +88,19 @@ visits temperatures.
 
 .. important::
 
-    **Each row of all these exports always contain an UUID** that can be used as
-    “external key” when importing them into Indicia to avoid item duplication.
-    Identifiers for the GeoNature concepts (transects, sections, visits,
-    observations) are transmitted as well as for the Indicia concepts
-    (transects, sections, transect visits, section observations) so that all
-    concepts always remain uniquely identifiable.
+   **Each row of all these exports always contain an UUID** that can be used as
+   “external key” when importing them into Indicia to avoid item duplication.
+   Identifiers for the GeoNature concepts (transects, sections, visits,
+   observations) are transmitted as well as for the Indicia concepts
+   (transects, sections, transect visits, section observations) so that all
+   concepts always remain uniquely identifiable.
 
 .. danger::
 
-    Because UUIDs are the only way to prevent data duplication, as a GeoNature
-    administrator, you must avoid deleting and recreating transects, sections or
-    any entity as it will generate a new UUID. Modifying an entity's UUID, e.g.
-    to restore a replaced UUID, requires manual database operations.
+   Because UUIDs are the only way to prevent data duplication, as a GeoNature
+   administrator, you must avoid deleting and recreating transects, sections or
+   any entity as it will generate a new UUID. Modifying an entity's UUID, e.g.
+   to restore a replaced UUID, requires manual database operations.
 
 Column names
 ^^^^^^^^^^^^

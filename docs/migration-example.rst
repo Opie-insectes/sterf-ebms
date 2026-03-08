@@ -298,6 +298,17 @@ Migrations des visites et observations
 
 Les visites sont en général plus simples à migrer vu qu'il n'y a aujourd'hui
 qu'un seul niveau de visite. La procédure consiste donc comme pour les transects
-et les sections à aligner les attributs de son module Sterf vers ceux du module
-Sterf-eBMS
+et les sections à transférer les attributs de son module Sterf vers ceux du
+module Sterf-eBMS
 
+Une fois cette étape terminée, les visites doivent être associées au nouveau
+module pour apparaitre lors de la consultation du site.
+
+.. code-block:: sql
+
+   UPDATE gn_monitoring.t_base_visits
+   SET id_module = gn_commons.get_id_module_bycode('sterf_ebms')
+   WHERE id_module = gn_commons.get_id_module_bycode('sterf');
+
+Les observations ne nécessitent pas de traitement particulier, à part la
+transformation des attributs, mais à ce stade vous avez l'habitude !

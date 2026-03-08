@@ -9,6 +9,9 @@
     "comments"
   ],
   "specific": {
+    "cd_nom": {
+      "attribut_label": "Taxon"
+    },
     "effectif": {
       "type_widget": "number",
       "attribut_label": "Effectif",

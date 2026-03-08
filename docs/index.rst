@@ -34,7 +34,7 @@ d'exporter ses données à destination de la plateforme européenne, `eBMS`_.
 Ses objectifs sont :
 
 1. Fournir une configuration adéquate pour la saisie de données à laquelle les
-   participants au Sterf sont habitué·e·s ;
+   participant·e·s au Sterf sont habitué·e·s ;
 2. Fournir la capacité d'exporter ses données Sterf de façon standardisée et en
    autonomie vers l'eBMS.
 
@@ -55,6 +55,9 @@ données de la plateforme eBMS.
 * If you **received data exported from this module** (e.g. you work at or with
   the UKCEH, on the eBMS platform, or with Indicia), you want to read the
   :doc:`data documentation <data>`.
+
+Nous vous conseillons tout de même de toujours parcourir a minima la doc
+utilisateur·ice, qui présente certains éléments de terminologie important.
 
 
 FAQ
