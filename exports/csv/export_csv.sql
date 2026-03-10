@@ -1395,6 +1395,8 @@ JOIN gn_monitoring.t_base_sites tbs USING (id_base_site)
 JOIN gn_monitoring.t_site_complements tsc USING (id_base_site)
 JOIN gn_monitoring.t_sites_groups tsg USING (id_sites_group)
 JOIN gn_commons.t_modules tm USING (id_module)
-WHERE tm.module_code = 'sterf_ebms'
+WHERE
+    tm.module_code = 'sterf_ebms'
+    AND (toc.data->'effectif')::int > 0
 ORDER BY tobs.id_observation
 ;

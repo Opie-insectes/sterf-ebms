@@ -351,7 +351,7 @@ The section observations exports contain the following columns:
 ``taxon_name``
     Taxon scientific name, without the author part.
 ``abundance_count``
-    Count of specimens.
+    Count of specimens. Always strictly positive, absences are not reported.
 ``occurrence comment``
     User comment about the specific occurence. It always also contains the
     TaxRef CD_NOM of the taxon so that it can be unambiguously identified.
