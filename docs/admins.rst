@@ -117,6 +117,29 @@ les réinstaller avec la commande :
    geonature monitorings process_sql sterf_ebms
 
 
+.. _update:
+
+Mises à jour
+------------
+
+Pour mettre à jour le module, vous pouvez télécharger la version que vous
+souhaitez et la décompresser directement dans le dossier de la configuration. Si
+vous avez un dépôt Git à cause de modifications apportées au module, vous pouvez
+checkout la version souhaitée.
+
+.. code-block:: bash
+
+   cd ~/modules/sterf_ebms  # adapter le dossier
+   tar xf /tmp/sterf-ebms-X.Y.Z.tar.gz
+
+La seule manipulation nécessaire après chaque mise à jour est la recréation des
+vues du module :
+
+.. code-block:: bash
+
+   geonature monitorings process_sql sterf_ebms
+
+
 .. _module_edition:
 
 Modifier le module
