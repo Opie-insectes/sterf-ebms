@@ -330,8 +330,7 @@ Section observations export
 The section observations exports contain the following columns:
 
 ``occurrence external key``
-    Occurence UUID. This is the French SINP UUID for this occurence. The typo is
-    intentional.
+    Occurrence UUID. This is the French SINP UUID for this occurrence.
 ``sample external key``
     Section visit UUID.
 ``parent_sample_external_key``
@@ -353,12 +352,11 @@ The section observations exports contain the following columns:
 ``abundance_count``
     Count of specimens. Always strictly positive, absences are not reported.
 ``occurrence comment``
-    User comment about the specific occurence. It always also contains the
+    User comment about the specific occurrence. It always also contains the
     TaxRef CD_NOM of the taxon so that it can be unambiguously identified.
-    Again, the typo is intentional.
 
 .. admonition:: Metadata
 
    The CD_NOM is always present in the comment field, with the ``CD_NOM``
    keyword followed by the value (no colon), e.g. ``CD_NOM 53979`` for a
-   *Lycaena dispar* occurence.
+   *Lycaena dispar* occurrence.
