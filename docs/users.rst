@@ -178,6 +178,12 @@ Médias
    qu'elle l'exclut de l'intégration. Nous essayerons d'apporter des précisions
    à ce sujet suite aux premières intégrations de données issues de ce module.
 
+   Si votre transect a beaucoup changé (habitat totalement différent, sections
+   définitivement inaccessibles, etc.) et qu'il n'est désormais plus pertinent
+   de comparer les données collectées dessus, il est plus raisonnable de définir
+   un nouveau transect, quitte à avoir des géométries de section similaires,
+   pour bien marquer cette différence.
+
 .. admonition:: L'eBMS utilise une nomenclature d'habitat simplifiée par rapport
    au Sterf, y a t-il un risque de dégradation de données ?
 
