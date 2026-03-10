@@ -266,13 +266,13 @@ The transect visits exports contain the following columns:
     Transect name.
 ``grid ref``
     Centroid of the transect (see ``centroid_sref`` in the transect exports).
-``grid ref srid``
+``grid_ref_srid``
     Always 4326.
 ``date``
     The visit date, formatted as YYYY-MM-DD.
-``start_hour``
+``start_time``
     The start hour of the first section walk that day.
-``end_hour``
+``end_time``
     The end hour of the last section walk that day.
 ``recorder_name``
     The observer name, or names if several, each on their own line.
@@ -342,7 +342,7 @@ The section observations exports contain the following columns:
     Section name.
 ``grid ref``
     Centroid of the section (see ``centroid_sref`` in the section exports).
-``grid ref srid``
+``grid_ref_srid``
     Always 4326.
 ``date``
     Visit date.

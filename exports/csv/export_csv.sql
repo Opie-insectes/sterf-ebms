@@ -1238,13 +1238,13 @@ SELECT
     -- Centroid SREF : centroïde du transect (repris de la vue transect).
     centroid_sref AS "grid ref",
     -- Centroid SREF SRID : SRID du centroïde du transect (repris de la vue transect).
-    centroid_sref_srid AS "grid ref srid",
+    centroid_sref_srid AS "grid_ref_srid",
     -- Date : date de la visite.
     "date",
-    -- Start hour : début de la première visite de section du transect.
-    MIN(start_hour) AS "start_hour",
-    -- End hour : fin de la dernière visite de section du transect.
-    MAX(end_hour) AS "end_hour",
+    -- Start time : début de la première visite de section du transect.
+    MIN(start_hour) AS "start_time",
+    -- End time : fin de la dernière visite de section du transect.
+    MAX(end_hour) AS "end_time",
     -- Recorder name : liste dédoublonnée des noms d'observateurs.
     (
         SELECT STRING_AGG(DISTINCT rn, E'\n')
@@ -1339,7 +1339,7 @@ FROM (
     WHERE tm.module_code = 'sterf_ebms'
     ORDER BY tbv.meta_create_date
 ) visits
-GROUP BY "guid", "location_name", "location external key", "grid ref", "grid ref srid", "date"
+GROUP BY "guid", "location_name", "location external key", "grid ref", "grid_ref_srid", "date"
 ;
 
 --------------------------------------------------------------------------------
@@ -1366,7 +1366,7 @@ SELECT
     -- Grid ref : Centroïde de la section.
     gn_monitoring.sterf_ebms_geom_as_indicia_lat_lon_text(tbs.geom, 4326) AS "grid ref",
     -- Grid ref SRID : SRID du centroïde de la section.
-    4326 AS "grid ref srid",
+    4326 AS "grid_ref_srid",
     -- Date : Date de l'observation (= date de la visite).
     tbv.visit_date_min AS "date",
     -- Reliability : fiabilité du compte d'observations.
