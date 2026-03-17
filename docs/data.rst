@@ -3,7 +3,9 @@ Data documentation
 
 This page is mainly destined to the folks who will integrate exports produced by
 this module. As this target audience is mostly english-speaking, this section is
-in English.
+in English. Another target audience is Sterf data holders looking for an
+adequate data format to send to the eBMS: the format presented here can be used
+as a reference.
 
 We often refer to `Indicia`_, which is the backend used by the eBMS platform to
 store data. Some technical choices taken with this module cannot be explained
