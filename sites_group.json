@@ -3,7 +3,6 @@
   "label": "Transect eBMS",
   "label_list": "Transects eBMS",
   "geom_field_name": "geom",
-  "geometry_type": "Point",
   "b_draw_sites_group": false,
   "display_properties": [
     "uuid_sites_group",
