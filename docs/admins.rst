@@ -119,8 +119,8 @@ les réinstaller avec la commande :
 
 .. _update:
 
-Mises à jour
-------------
+Mise à jour
+-----------
 
 Pour mettre à jour le module, vous pouvez télécharger la version que vous
 souhaitez et la décompresser directement dans le dossier de la configuration. Si
@@ -293,3 +293,62 @@ vos données avant l'envoi à l'eBMS, n'hésitez pas à nous écrire directement
 
 Vous pouvez également consulter la :doc:`documentation des données <data>`
 pour en savoir plus sur le format des exports.
+
+
+.. _synthesis:
+
+Mettre à jour la synthèse
+-------------------------
+
+Ce module vient avec un fichier SQL (``synthese.sql``) pour que le module
+Monitoring puisse envoyer vos données depuis le module de suivi vers la synthèse
+de GeoNature, de façon à ce qu'elles puissent être consultées comme les autres
+données de votre instance. Cette fonctionnalité doit être activée dans
+l'interface de configuration du module (case ``Activer la synthèse``) puis les
+données peuvent être mises à jour avec le bouton ``Mettre à jour la synthèse``
+sur la page des détails du module.
+
+Il est possible que certains choix faits par le module lors de l'envoi vers la
+synthèse ne vous conviennent pas. Par exemple, le module suppose que toutes les
+observations renseignées concernent des imagos, mais si vous avez modifié le
+module pour permettre la spécification du stade de vie de vos observations, il
+vous faudra modifier le script de synthèse pour refléter ces changements.
+
+Voici la liste des choix qui ont été faits :
+
+* La nature des objets géographiques est *inventorielle*, i.e. le taxon observé
+  est présent quelque part dans l'objet géographique mais ne le recouvre pas
+  (nomenclature peu utilisée en entomologie) ;
+* Les types de regroupements sont des *passages* ;
+* La méthode d'observation est *"vu"*, i.e. observation directe d'un individu
+  vivant ;
+* Le statut biologique est non renseigné ;
+* L'état biologique est *"vivant"* ;
+* Le niveau de naturalité est *"sauvage"*, i.e. ce n'est pas un individu
+  domestiqué ou féral ;
+* Il est renseigné qu'il n'y a pas de preuve existante (*"inconnue"*) ;
+* Le statut de validation est *"en attente de validation"* : ceci n'est pas un
+  des cinq statuts de validation du SINP donc ça peut être intéressant de
+  modifier cette définition si vous souhaitez valider automatiquement vos
+  observations Sterf sur votre instance ;
+* Le niveau de précision de diffusion souhaité est *standard* sauf si le
+  transect a été noté comme sensible, auquel cas le niveau est *aucune* ;
+* De la même manière, le niveau de sensibilité est *"aucune diffusion permise"*
+  ou *"non sensible"* selon l'état de sensibilité du transect ;
+* Le stade de vie est *imago* ;
+* Le sexe est *indéterminé* ;
+* L'objet du dénombrement est *"individu"* ;
+* Le type de dénombrement est *"compté"* ;
+* Le statut de l'observation est *"présent"* si l'effectif est positif, *"non
+  observé"* sinon ;
+* La donnée est indiquée comme non floutée ;
+* Le statut de la source est *"venant du terrain"* ;
+* Le type d'information géographique est le *"géoréférencement"*, i.e. l'objet
+  géographique est bien celui où on a fait l'observation et n'est pas un objet
+  rattaché après coup (e.g. le polygone de la commune) ;
+* Le comportement des occurences observées est non renseigné ;
+* Le module ne compte qu'un effectif, pas une fourchette, par conséquent le
+  décompte minimal est identique au décompte maximal ;
+* La méthode de détermination est non renseignée ;
+* Le commentaire de contexte est celui de la visite ;
+* Le commentaire de l'occurence est celui de l'observation.
