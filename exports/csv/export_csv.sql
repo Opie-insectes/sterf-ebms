@@ -1336,7 +1336,7 @@ FROM (
         WHERE tobs.id_base_visit = tbv.id_base_visit
     ) c ON TRUE
     LEFT JOIN wind_speeds ws ON ws.id_nomenclature = (tvc.data->'wind_speed')::int
-    LEFT JOIN floral_covers fc ON jsonb_typeof(tvc.data->'floral_cover') = 'number' AND fc.id_nomenclature = (tvc.data->'floral_cover')::int
+    LEFT JOIN floral_covers fc ON fc.id_nomenclature = (tvc.data->>'floral_cover')::int
     WHERE tm.module_code = 'sterf_ebms'
     ORDER BY tbv.meta_create_date
 ) visits
