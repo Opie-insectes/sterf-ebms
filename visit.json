@@ -5,6 +5,7 @@
   "description_field_name": "visit_date_min",
   "display_properties": [
     "id_base_site",
+    "any_butt",
     "visit_date_min",
     "observers",
     "nb_observations",
@@ -24,9 +25,16 @@
     "start_hour",
     "end_hour",
     "nb_observations",
+    "any_butt",
     "completed"
   ],
   "specific": {
+    "any_butt": {
+      "type_widget": "radio",
+      "attribut_label": "Avez-vous vu des papillons lors de cette visite ?",
+      "values": ["Oui", "Non"],
+      "value": "Oui"
+    },
     "visit_date_max": {
       "required": false,
       "hidden": true

@@ -1262,7 +1262,7 @@ SELECT
         WHERE as_integer = ROUND(AVG(wind_speed))
     ) AS "wind_speed",
     -- Any butterflies : indique si les visites ont trouvé des papillons.
-    (COALESCE(SUM(butterfly_count), 0) > 0)::int AS "any_butterflies_?"
+    CASE WHEN 'Oui' = ANY (ARRAY_AGG(any_butterflies)) THEN 1 ELSE 0 END AS "any_butterflies_?"
     -- Num sections visited : nombre de visites de sections inclues.
     -- Colonne à activer uniquement pour vérifier le nombre de section
     -- considérées dans une même visite de transect, à ne pas envoyer à l'eBMS.
@@ -1286,6 +1286,7 @@ FROM (
         (tvc.data->'temperature')::int AS "temperature",
         (tvc.data->'cloud_cover')::int AS "cloud_cover",
         ws.as_integer AS "wind_speed",
+        tvc.data->>'any_butt' AS "any_butterflies",
         c.butterfly_count AS "butterfly_count",
         -- On concatène dans le commentaire de la visite de transect tous les
         -- commentaires des différentes visites de sections, auquel on ajoute
@@ -1327,7 +1328,7 @@ FROM (
         WHERE tbv_.id_base_visit = tbv.id_base_visit
         GROUP BY tbv_.id_base_visit
     ) o ON TRUE
-    -- Jointure du compte d'observation.
+    -- Jointure du compte d'observations.
     LEFT JOIN LATERAL (
         SELECT COALESCE(SUM((toc.data->'effectif')::int), 0) AS "butterfly_count"
         FROM gn_monitoring.t_observations tobs

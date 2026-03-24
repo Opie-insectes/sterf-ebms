@@ -290,6 +290,8 @@ The transect visits exports contain the following columns:
     Average wind speed during the visit, as a Beaufort scale level. Max at 6.
 ``any_butterflies_?``
     Boolean: 1 if any butterflies were seen during the visit, 0 otherwise.
+    This is a user-set value and may not be consistent with the actual number of
+    observations included in the sample.
 ``num_sections_visited``
     Number of sections visited during this transect visit. Mostly for internal
     use.

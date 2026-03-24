@@ -315,6 +315,12 @@ section et ajouter une nouvelle visite.
 
 Attributs :
 
+Avez-vous vu des papillons lors de cette visite ? |ebms|
+   Cette information permet de distinguer deux types de visites : d'une part les
+   visites qui ont permis de faire des observations mais dont les observations
+   n'ont pas encore été renseignées dans le module, et d'autre part les visites
+   où l'on sait qu'aucune observation n'a été faite. Elle est par défaut à
+   ``Oui``.
 Date |ebms|
    Date de la visite
 Observateurs |ebms|
