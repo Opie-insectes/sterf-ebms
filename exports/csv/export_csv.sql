@@ -988,9 +988,7 @@ SELECT
     (
         SELECT label_en
         FROM land_tenures
-        WHERE
-            jsonb_typeof(tsg.data->'land_tenure_2') = 'number'
-            AND id_nomenclature = (tsg.data->'land_tenure_2')::int
+        WHERE id_nomenclature = (tsg.data->>'land_tenure_2')::int
     ) AS "2nd_land_tenure",
     -- Principal land management : gestion du terrain (principale).
     (
@@ -1002,9 +1000,7 @@ SELECT
     (
         SELECT label_en
         FROM land_managements
-        WHERE
-            jsonb_typeof(tsg.data->'land_management_2') = 'number'
-            AND id_nomenclature = (tsg.data->'land_management_2')::int
+        WHERE id_nomenclature = (tsg.data->>'land_management_2')::int
     ) AS "2nd_land_management",
     -- Notes on habitat, land management and tenure : comme il dit.
     tsg.comments AS "notes_on_habitat_land_management_and_tenure",
@@ -1045,7 +1041,7 @@ CROSS JOIN LATERAL (
 -- Jointure de l'habitat Sterf secondaire.
 CROSS JOIN LATERAL (
     SELECT (
-        (SELECT n_mnemonique FROM hab_n1 WHERE jsonb_typeof(tsg_.data->'habitat_secondary_1') = 'number' AND id_nomenclature = (tsg_.data->'habitat_secondary_1')::int)
+        (SELECT n_mnemonique FROM hab_n1 WHERE id_nomenclature = (tsg_.data->>'habitat_secondary_1')::int)
         || (SELECT n_mnemonique FROM hab_n2 WHERE n_label = (tsg_.data->>'habitat_secondary_2')::text)
         || COALESCE((SELECT n_mnemonique FROM hab_n3 WHERE n_label = (tsg_.data->>'habitat_secondary_3')::text), '')
         || COALESCE((SELECT n_mnemonique FROM hab_n4 WHERE n_label = (tsg_.data->>'habitat_secondary_4')::text), '')
@@ -1159,17 +1155,13 @@ SELECT
     (
         SELECT label_en
         FROM land_managements
-        WHERE
-            jsonb_typeof(tsg.data->'land_management') = 'number'
-            AND id_nomenclature = (tsc.data->'land_management')::int
+        WHERE id_nomenclature = (tsc.data->>'land_management')::int
     ) AS "primary_land_management_present",
     -- 2nd land management : gestion du terrain (secondaire), si différente du transect.
     (
         SELECT label_en
         FROM land_managements
-        WHERE
-            jsonb_typeof(tsc.data->'land_management_2') = 'number'
-            AND id_nomenclature = (tsc.data->'land_management_2')::int
+        WHERE id_nomenclature = (tsc.data->>'land_management_2')::int
     ) AS "2nd_land_management_present",
     -- Notes on land use : notes sur l'utilisation et la gestion des sols.
     tsc.data->>'comments' AS "notes_on_land_use_and_management"
@@ -1181,7 +1173,7 @@ JOIN ref_nomenclatures.t_nomenclatures tn ON tn.id_nomenclature = cst.id_type_si
 -- Jointure de l'habitat Sterf principal.
 CROSS JOIN LATERAL (
     SELECT (
-        (SELECT n_mnemonique FROM hab_n1 WHERE jsonb_typeof(tsc_.data->'habitat_main_1') = 'number' AND id_nomenclature = (tsc_.data->'habitat_main_1')::int)
+        (SELECT n_mnemonique FROM hab_n1 WHERE id_nomenclature = (tsc_.data->>'habitat_main_1')::int)
         || (SELECT n_mnemonique FROM hab_n2 WHERE n_label = (tsc_.data->>'habitat_main_2')::text)
         || COALESCE((SELECT n_mnemonique FROM hab_n3 WHERE n_label = (tsc_.data->>'habitat_main_3')::text), '')
         || COALESCE((SELECT n_mnemonique FROM hab_n4 WHERE n_label = (tsc_.data->>'habitat_main_4')::text), '')
@@ -1193,7 +1185,7 @@ CROSS JOIN LATERAL (
 -- Jointure de l'habitat Sterf secondaire.
 CROSS JOIN LATERAL (
     SELECT (
-        (SELECT n_mnemonique FROM hab_n1 WHERE jsonb_typeof(tsc_.data->'habitat_secondary_1') = 'number' AND id_nomenclature = (tsc_.data->'habitat_secondary_1')::int)
+        (SELECT n_mnemonique FROM hab_n1 WHERE id_nomenclature = (tsc_.data->>'habitat_secondary_1')::int)
         || (SELECT n_mnemonique FROM hab_n2 WHERE n_label = (tsc_.data->>'habitat_secondary_2')::text)
         || COALESCE((SELECT n_mnemonique FROM hab_n3 WHERE n_label = (tsc_.data->>'habitat_secondary_3')::text), '')
         || COALESCE((SELECT n_mnemonique FROM hab_n4 WHERE n_label = (tsc_.data->>'habitat_secondary_4')::text), '')
