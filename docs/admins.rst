@@ -352,3 +352,32 @@ Voici la liste des choix qui ont été faits :
 * La méthode de détermination est non renseignée ;
 * Le commentaire de contexte est celui de la visite ;
 * Le commentaire de l'occurence est celui de l'observation.
+
+
+.. _module_conservation:
+
+Conserver un module existant
+----------------------------
+
+Si votre structure n'est pas en capacité de migrer depuis un module Sterf déjà
+installé vers ce nouveau module, pour des raisons de temps, de financements ou
+de besoins de l'équipe déjà implémentés et trop complexes à porter sur ce
+module, vous avez toujours l'option de conserver votre module tout en adaptant
+ou créant de nouvelles vues d'exports CSV de façon à produire des exports
+compatibles avec l'eBMS.
+
+Pour cela, vous devez lire dans le détail les différentes sections de cette
+documentation pour maîtriser tous les aspects du module. La documentation sur
+les données en particulier présente chaque colonne des différents exports à
+produire. Une lecture détaillée du fichier ``exports/csv/export_csv.sql`` est
+fortement recommandée pour saisir les différentes nuances du format attendu.
+
+L'Opie peut vous accompagner dans cette démarche, n'hésitez pas à nous contacter
+pour que l'on puisse voir ensemble si vos exports semblent conformes. L'objectif
+est d'arriver aussi proche que possible de notre format : chaque différence
+imprévue étant un frein potentiel à l'intégration dans l'eBMS, il vaut mieux
+viser une correspondance maximale.
+
+L'Opie ne peut cependant pas traiter des exports de données d'un autre format
+pour les envoyer à l'eBMS ; ce module a justement été développé pour éviter ce
+travail long et fastidieux.

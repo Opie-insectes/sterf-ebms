@@ -76,7 +76,8 @@ FAQ
    GeoNature ?
 
    Oui, la documentation d'administration est là pour ça, et vous pouvez `nous
-   contacter <admin@insectes.org>`__ en cas de problème.
+   contacter <admin@insectes.org>`__ en cas de problème : voir
+   :ref:`installation`
 
 .. admonition:: J'ai déjà un module Sterf, est-ce que je peux installer ce
    module en parallèle, voire migrer mes données ?
@@ -86,7 +87,14 @@ FAQ
    manuellement soit à l'aide de requêtes SQL ; dans tous les cas c'est un
    processus qui varie selon chaque module, mais vous trouverez dans la
    documentation d'administration des conseils ainsi qu'un exemple de migration
-   pour vous aider à migrer vos données.
+   pour vous aider à migrer vos données : voir :ref:`module_migration`
+
+.. admonition:: Ma structure ne peut pas se passer de son module Sterf actuel,
+   qu'est-ce que je peux faire ?
+
+   Si vous avez des contraintes qui vous empêchent de faire la transition vers
+   le nouveau module, une option possible est d'adapter votre script d'exports
+   de données en vous inspirant de ce module : voir :ref:`module_conservation`
 
 
 À propos
