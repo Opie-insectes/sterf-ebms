@@ -277,19 +277,16 @@ risquer de manquer d'éléments au moment de l'intégration. Chaque transect,
 section, visite et observation est identifiée avec un UUID pour éviter les
 dédoublements de données.
 
-Vous pouvez envoyer vos données par e-mail à `l'adresse de l'eBMS`_. **Nous vous
-prions de bien vouloir nous mettre en copie** via notre `adresse de gestion de
-données`_, de façon à pouvoir suivre l'utilisation du module et le bon
-déroulement des échanges de données dans le cadre de l'animation du programme.
-Nous vous recommandons dans votre e-mail de préciser que ces données ont été
-produites à l'aide de ce module, si possible avec le numéro de version du
-module, et d'ajouter un lien vers la :doc:`documentation des données <data>`.
+Vous pouvez envoyer vos données par e-mail à `l’adresse de notre gestionnaire de
+données`_, de façon à ce que nous puissions suivre l'utilisation du module et le
+bon déroulement des échanges de données dans le cadre de l'animation du
+programme. Si possible, veuillez nous préciser le numéro de version du module
+(fichier ``VERSION``) dans votre e-mail.
 
 Si vous avez des questions sur vos exports ou que vous souhaitez un retour sur
 vos données avant l'envoi à l'eBMS, n'hésitez pas à nous écrire directement.
 
-.. _l'adresse de l'eBMS: ebms@ceh.ac.uk
-.. _adresse de gestion de données: sig@insectes.org
+.. _l’adresse de notre gestionnaire de données: sig@insectes.org
 
 Vous pouvez également consulter la :doc:`documentation des données <data>`
 pour en savoir plus sur le format des exports.
