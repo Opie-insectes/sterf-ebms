@@ -11,10 +11,19 @@ exporter ses données à l'eBMS.
 Installation
 ------------
 
-Le module a été développé avec GeoNature en version 2.15 et le module
-`Monitoring`_ en version 1.0.3 et doit fonctionner avec ces versions minimales.
+Ce module a besoin de GeoNature et du module `Monitoring`_ pour fonctionner.
 
 .. _Monitoring: https://github.com/PnX-SI/gn_module_monitoring
+
+* Versions minimales :
+
+  * GeoNature 2.15
+  * module Monitoring 1.0.3
+
+* Dernières versions testées :
+
+  * GeoNature 2.17.5
+  * module Monitoring 1.3.2
 
 La dernière version du module est toujours disponible sur son `propre dépôt`_.
 Une version récente est également mise à disposition sur le `dépôt commun`_ aux
