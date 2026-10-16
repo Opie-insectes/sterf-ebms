@@ -102,7 +102,7 @@ FAQ
 
 Ce module a été développé par l’`Office pour les insectes et leur
 environnement`_, en partenariat avec l’`UKCEH`_, avec le soutien de l’`Office
-français de la biodiversité`_.
+français de la biodiversité`_. Il est publié sous la licence GPLv3.
 
 .. _Office pour les insectes et leur environnement: https://insectes.org
 .. _UKCEH: https://www.ceh.ac.uk/
